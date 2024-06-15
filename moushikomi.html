@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   <link rel="stylesheet" href="css/navfooter.css">
+
+    <title>Top</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-info-subtle mb-5">
+  <div class="container-fluid">
+    <a class="navbar-brand" href=" index.html">
+    <img src="/img/nav-logo.png" class="col-4" alt="VISA,仕事、動力">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active fw-bold" aria-current="page" href=" index.html">Home</a>
+       
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="senden.html">宣伝</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="moushikomi.html">申し込み</a>
+        </li>
+        <li class="nav-item">
+        <div class="dropdown">
+  <button data-mdb-button-init
+    data-mdb-ripple-init data-mdb-dropdown-init class="btn btn-primary dropdown-toggle"
+    type="button"
+    id="dropdownMenuButton"
+    data-mdb-toggle="dropdown"
+    aria-expanded="false"
+  >
+    Dropdown button
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</div>
+        </li>
+
+<!--
+             <li class="nav-item dropdown">
+          
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>-->
+
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+    
+
+
+
+
+
+
+
+<div class="container bg-info-subtle m-auto p-5 position-relative">
+
+  <h1 class="fw-bold">お問い合わせ・お申し込み</h1>
+  <h3 class="fw-bold">Application Form 咨询・申请报名</h3>
+  <h3 class="fw-bold">Những vấn đề thắc mắc. Cách thức đăng ký</h3><br>
+  <h5>
+  全国外国人雇用協会に、ご興味をお持ちいただき、ありがとうございます。
+  </h5>
+
+  <h5>
+  下記のフォームに必要事項をご記入の上、ご送信ください。
+  </h5><br>
+  <h5>
+  Thank you for your intention and interest. Please fulfill the form below.
+  </h5><br>
+  <h5>
+  万分感谢您对全国外国人雇佣协会感兴趣。请按下面的表格填入所需要的信息，之后请发送给我们。
+  </h5><br>
+
+  <h5>
+  Cảm ơn các bạn luôn tin tưởng và quan tâm tới công ty tuyển dụng nhân lực người nước ngoài của chúng tôi. <br> Mọi vấn đề thắc mắc, cách thức đăng ký vui lòng điền các thông tin cần thiết vào mẫu dưới đây：
+  </h5>
+
+  <hr class="border border-dark border-3 ">
+
+
+  <form class="row g-3 needs-validation" action="email_sender.php" method="GET" enctype="text/plain">
+  <div class="col-12">
+    <label for="mailer_name" class="form-label" >お名前（Name／姓名／Họ và tên）</label>
+    <input type="text" class="form-control" name="mailer_name" id="mailer_name" placeholder="佐藤" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+
+  <div class="col-12">
+    <label for="mailer_mail" class="form-label">メールアドレス（Mail Address／电子邮件地址／Địa chỉ liên lạc）</label>
+    <input type="email" class="form-control" id="mailer_mail" name="mailer_mail" aria-describedby="emailHelp" placeholder="example@gmail.com" required>
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    <div class="invalid-feedback">
+      Please write correct email
+    </div>
+  </div>
+
+
+
+  <div class="col-12">
+    <label for="mailer_phone" class="form-label">電話番号（Telephone Number／电话号码／Số điện thoại）*</label>
+    <input type="tel" class="form-control" id="mailer_phone" name="mailer_phone" placeholder="+811234567890" required>
+    <div class="invalid-feedback">
+      Please provide a valid phone.
+    </div>
+  </div>
+
+
+
+
+
+  <div class="col-12">
+    <label for="mailer_category" class="form-label">カテゴリー（Your interest／分类／Nhóm）</label>
+    <select class="form-select" id="mailer_category" name="mailer_category" required>
+      <option selected disabled value="">カテゴリー...</option>
+                          <option value="1">会員登録に関する質問・申込</option>
+                          <option value="2">有力企業フェアへの参加申込</option>
+                          <option value="3">行政書士の紹介依頼</option>
+                          <option value="4">人材会社の紹介依頼</option>
+                          <option value="5">セミナーの受講申込</option>
+                          <option value="6">資格試験の受験申込</option>
+                          <option value="7">資格試験参考書の購入申込</option>
+                          <option value="8">コンプライアンスの相談・対策</option>
+                          <option value="9">ビザミシュランの相談・申込</option>
+                          <option value="10">スクールチェックの相談・申込</option>
+                          <option value="11">外国人総合顧問サービスの相談・申込</option>
+                          <option value="12">申請業務受託の相談・申込</option>
+                          <option value="13">入管法違反等に関する情報提供</option>
+                          <option value="14">その他のご質問・ご相談</option>
+
+    </select>
+    <div class="invalid-feedback">
+      Please select a valid category.
+    </div>
+  </div>
+
+
+
+  <div class="col-12">
+  <label for="mailer_says" class="form-label">お問い合わせ内容（What can we help you ?／咨询内容／Nội dung hỏi đáp, vấn đề quan tâm）</label>
+  <input type="text" class="form-control" id="mailer_says" name="mailer_says" placeholder="咨询内容">
+</div>
+
+
+
+
+<!--
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Agree to terms and conditions
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+-->
+
+
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit" value="Send">Submit form</button>
+  </div>
+  <?php  header('Location:email_sender.php');?>
+</form>
+
+
+
+</div>
+
+
+
+
+
+<!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="my-5">
+  <!-- Footer -->
+  <footer
+          class="text-center text-lg-start text-black bg-info-subtle"
+          
+          >
+    <!-- Grid container style="background-color: #929fba"-->
+    <div class="container p-4 pb-0">
+        
+
+
+
+
+
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 d-flex align-items-center">
+          <a class="m-auto d-flex align-items-center" href=" index.html">
+    <img src="/img/logo-footer.png" class="w-100 m-auto" alt="VISA,仕事、動力">
+    </a>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column 
+                  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+            <p>
+              <a class="text-white">MDBootstrap</a>
+            </p>
+            <p>
+              <a class="text-white">MDWordPress</a>
+            </p>
+            <p>
+              <a class="text-white">BrandFlow</a>
+            </p>
+            <p>
+              <a class="text-white">Bootstrap Angular</a>
+            </p>
+          </div>-->
+
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+            <p><i class="bi bi-house mr-3"></i> 〒101-0041
+東京都千代田区神田須田町1 丁目28 タイムビル6F</p>
+            <p><i class="bi bi-envelope mr-3"></i> contact@nfea.net</p>
+            <p><span><i class="bi bi-phone mr-3"></i>  03-6206-8058 </span><span><i class="bi bi-printer mr-3"></i>  03-6206-8179</span></p>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+
+            <!-- Facebook -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #3b5998"
+               href="#!"
+               role="button"
+               ><i class="bi bi-facebook"></i></a>
+
+            <!-- Twitter -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #55acee"
+               href="#!"
+               role="button"
+               ><i class="bi bi-twitter"></i></i
+              ></a>
+
+            <!-- Google -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #dd4b39"
+               href="#!"
+               role="button"
+               ><i class="bi bi-google"></i
+              ></a>
+
+            <!-- Instagram -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #ac2bac"
+               href="#!"
+               role="button"
+               ><i class="bi bi-instagram"></i
+              ></a>
+
+            <!-- Linkedin -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #0082ca"
+               href="#!"
+               role="button"
+               ><i class="bi bi-youtube"></i
+              ></a>
+            <!-- Github -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #333333"
+               href="#!"
+               role="button"
+               ><i class="bi bi-github"></i
+              ></a>
+          </div>
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+      © 2024 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/"
+         >By Muhammad</a
+        >
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</div>
+<!-- End of .container -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+
